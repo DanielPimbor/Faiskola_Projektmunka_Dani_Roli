@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faiskola</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png"> <!-- Ide kerül majd az icon -->
+    <title>A Bölcs Misztikus Faiskola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> <!-- Ide kerül majd az icon -->
 </head>
+
 <body>
-    
+    <div class="grid-layout">
+        <header style="text-align: center;">
+            <img src="images/cim.png" alt="A Bölcs Misztikus Fa" style="max-width: 300px;">
+            <h1>A Bölcs Misztikus Faiskola</h1>
+        </header>
+
+        <aside>
+            <h2>Csatlakozz hozzánk!</h2>
+            <p>Regisztrálj és jelentkezz a faültető programmunkra!</p>
+            <form action="jelentkezes.php" method="post">
+
+                <p>
+                    <label for="nev">Teljes név</label><br>
+                    <input type="text" id="nev" name="nev" placeholder="Kovács Anna" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail cím</label><br>
+                    <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+                </p>
+
+                <p>
+                    <label for="tel">Telefonszám</label><br>
+                    <input type="tel" id="tel" name="telefon" placeholder="+36 30 123 4567">
+                </p>
+
+                <p>
+                    <label for="szul">Születési dátum</label><br>
+                    <input type="date" id="szul" name="szuletes" required>
+                </p>
+                <button type="submit">Jelentkezem</button>
+            </form>
+        </aside>
+
+        <main>
+            <h2>Bemutatás</h2>
+        </main>
+
+        <footer style="text-align: center;">
+            <p>Copyright:&copy; 2026 FAISKOLA - Készítette: Pimbor Dániel és Müller Gábor Roland</p>
+        </footer>
+    </div>
 </body>
+
 </html>
