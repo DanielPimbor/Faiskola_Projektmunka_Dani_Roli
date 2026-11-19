@@ -3,6 +3,11 @@ body{
     color: rgb(44, 30, 6);
 }
 
+h2{
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(67, 82, 67);
+}
+
 ::selection {
     background-color: rgb(44, 30, 6);
     color: rgb(255, 244, 223);
@@ -12,23 +17,37 @@ body{
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px 4px black;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50vh;          /* ide jön a kívánt magasság */
+    
+    flex-direction: column;      /*A gyerekeket (h1, p) egymás alá rakja, nem egymás mellé*/
+    
+    overflow: hidden;        /*Ami kilóg a konténerből, azt levágja. Itt a videó fölösleges részét rejti el*/
+    
+    position: relative;         /*A konténer lesz a viszonyítási pont a benne lévő absolute elemeknek (a videónak)*/
+    
+    display: flex;      /*	Bekapcsolja a flexboxot, így a gyerekeket tudod igazítani*/
+    
+    justify-content: center;        /*A főtengely mentén középre igazít (column esetén függőlegesen)*/
+    
+    align-items: center;         /*A keresztirányú tengely mentén középre igazít (column esetén vízszintesen)*/
+    
+    text-align: center;      /*	A szövegen belüli sorokat középre zárja*/
+    
+    height: 50vh;          /* A konténer magassága a képernyő magasságának 50%-a (vh = viewport height)*/
 }
 
 .video-bg{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;   /* a függőleges középre igazítás: fent és lent egyformán vág */
+    position: absolute;         /*Kiveszi a videót a normál elrendezésből, így nem tolja el a szövegeket, hanem a konténeren belül szabadon elhelyezhető*/
+    
+    z-index: -1;        /*A videót a szöveg mögé teszi (a negatív szám a rétegsorrendben hátrébb van)*/
+    
+    width: 100%;        /*A videó szélessége a konténer teljes szélessége (faltól falig)*/
+    
+    
+    height: 100%;       /*	A videó magassága a konténer teljes magassága*/
+
+    object-fit: cover;      /*A videó kitölti a területet az arányok megtartásával, és ami nem fér bele, azt levágja (itt fent és lent)*/
+
+    object-position: center;   /* Meghatározza, melyik részét mutatja a videónak: a közepét. Így fent és lent egyformán vág */
 }
 
 .navigacio{
