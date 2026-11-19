@@ -1,9 +1,17 @@
 body{
-    background-color: rgb(36, 14, 11);
+    background-color: rgb(44, 30, 6);
     color: white;
 }
 
 .navigacio{
     background-color: wheat;
-    font-size: ;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.navigacio a{
+    padding: 50px;
+    text-decoration: none;
+    color: black;
 }
