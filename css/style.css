@@ -8,6 +8,29 @@ body{
     color: rgb(255, 244, 223);
 }
 
+.videoszoveg{
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;          /* ide jön a kívánt magasság */
+}
+
+.video-bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   /* a függőleges középre igazítás: fent és lent egyformán vág */
+}
+
 .navigacio{
     background-color: wheat;
     font-size: 30px;
