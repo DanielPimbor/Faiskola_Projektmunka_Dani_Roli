@@ -1,17 +1,60 @@
 body{
     background-color: rgb(44, 30, 6);
-    color: white;
+    color: rgb(44, 30, 6);
+}
+
+::selection {
+    background-color: rgb(44, 30, 6);
+    color: rgb(255, 244, 223);
 }
 
 .navigacio{
     background-color: wheat;
     font-size: 30px;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigacio a{
     padding: 50px;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
+}
+
+
+.navigacio a:hover {
+    color: rgb(121, 88, 37);
+    transform: scale(1.1);
+}
+
+.navigacio img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+}
+
+#bemutatas{
+    background-color: wheat;
+}
+
+#novenyeink{
+    background-color: wheat;
+}
+
+#dijaink{
+    background-color: wheat;
+}
+
+#melleklapok{
+    background-color: wheat;
+}
+
+footer{
+    background-color: wheat;
 }
