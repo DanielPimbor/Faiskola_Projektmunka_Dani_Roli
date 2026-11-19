@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Csatlakozz hozzánk!</h2>
+            <p>Regisztrálj és jelentkezz a faültető programmunkra!</p>
+            <form action="jelentkezes.php" method="post">
+
+                <p>
+                    <label for="nev">Teljes név</label><br>
+                    <input type="text" id="nev" name="nev" placeholder="Kovács Anna" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail cím</label><br>
+                    <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+                </p>
+
+                <p>
+                    <label for="tel">Telefonszám</label><br>
+                    <input type="tel" id="tel" name="telefon" placeholder="+36 30 123 4567">
+                </p>
+
+                <p>
+                    <label for="szul">Születési dátum</label><br>
+                    <input type="date" id="szul" name="szuletes" required>
+                </p>
+                <button type="submit">Jelentkezem</button>
+            </form>
+</body>
+</html>

@@ -3,34 +3,7 @@ body{
     color: white;
 }
 
-/* grid layout*/
-.grid-layout{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    "header header"
-    "aside main"
-    "footer footer";
-    gap: 5px;
-}
-
-header{
-    grid-area: header;
-    background-color: rgb(32, 70, 24);
-}
-
-main{
-    grid-area: main;
-    background-color: rgb(80, 55, 50);
-}
-
-
-aside{
-    grid-area: aside;
-    background-color: rgb(80, 55, 50);
-}
-
-footer{
-    grid-area: footer;
-    background-color: rgb(73, 36, 26);
+.navigacio{
+    background-color: wheat;
+    font-size: ;
 }
